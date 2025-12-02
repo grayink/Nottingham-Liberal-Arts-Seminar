@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诺丁汉文理学院 | Nottingham Liberal Arts Seminar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background-color: #fdfbf7; /* 羊皮纸色背景 */
+            color: #2c3e50;
+        }
+        .eng-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .sans-font {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            /* 建议替换为诺丁汉Trent Building或Wollaton Hall的图片 */
+            background-image: linear-gradient(rgba(14, 39, 23, 0.6), rgba(14, 39, 23, 0.7)), url('https://images.unsplash.com/photo-1466023778335-d2243d4c0620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* 时间轴线条动画效果 */
+        .timeline-line {
+            background: linear-gradient(to bottom, #14532d 0%, #14532d 90%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- 导航栏 -->
+    <nav class="flex items-center justify-between px-6 py-5 bg-[#fdfbf7]/90 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="text-xl md:text-2xl font-bold tracking-widest text-green-900">
+            Nott. <span class="font-normal italic eng-font">Liberal Arts</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <a href="#about" class="hover:text-green-900 transition">关于理念</a>
+            <a href="#archive" class="hover:text-green-900 transition">往期研讨</a>
+            <a href="#join" class="px-4 py-2 bg-green-900 text-white rounded hover:bg-green-800 transition">加入我们</a>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <header class="hero-bg h-[80vh] flex items-center justify-center text-center px-4 relative">
+        <div class="text-white max-w-4xl z-10">
+            <p class="eng-font text-xl md:text-2xl italic mb-6 opacity-90">Where minds collide in the rain.</p>
+            <h1 class="text-4xl md:text-7xl font-bold mb-8 tracking-wide leading-tight">诺丁汉文理学院<br><span class="text-2xl md:text-4xl font-light opacity-90 block mt-4">Nottingham Liberal Arts Seminar</span></h1>
+            <div class="w-24 h-1 bg-white mx-auto mb-10 opacity-60"></div>
+            <p class="text-lg md:text-xl mb-12 text-gray-100 font-light max-w-2xl mx-auto">
+                从Hito Steyerl的自由落体到刘慈欣的物理宇宙。<br>跨越学科边界，在罗宾汉的城市寻找思想的栖息地。
+            </p>
+            <a href="#archive" class="inline-block border border-white text-white px-8 py-3 rounded hover:bg-white hover:text-green-900 transition duration-300">浏览研讨记录</a>
+        </div>
+    </header>
+
+    <!-- 关于我们 (简略版) -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center border-b border-gray-200">
+        <h2 class="text-3xl font-bold text-green-900 mb-8 eng-font">The Vision</h2>
+        <p class="text-lg text-gray-700 mb-8 leading-loose">
+            我们不满足于碎片的阅读，也不受限于单一的学科视角。<br>
+            在这里，社会学博士在谈论游戏叙事，物理系学生在解构当代艺术。<br>
+            这是诺丁汉最纯粹的思维实验场。
+        </p>
+    </section>
+
+    <!-- 研讨会回顾 (核心内容更新) -->
+    <section id="archive" class="py-24 bg-[#f4f1ea]">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-900 mb-4 eng-font">Seminar Archive</h2>
+            <p class="text-center text-gray-500 mb-16 sans-font text-sm uppercase tracking-widest">Recorded History 2025</p>
+            
+            <div class="relative timeline-line border-l-2 border-green-900/10 ml-4 md:ml-1/2 space-y-20 pb-20">
+                
+                <!-- 10. 明日方舟 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-green-900 rounded-full border-4 border-[#f4f1ea] z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.11.21</span><br>第十期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-wider rounded sans-font">Game Studies</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-800 text-xs font-bold uppercase tracking-wider rounded sans-font">Sci-Fi</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">明日方舟《孤星篇》：科学的浪漫</h3>
+                            <p class="text-gray-600 mb-4 text-justify">
+                                这是一次将二次元文本进行严肃学术演绎的尝试。汇报人将《明日方舟》庞大的世界观拆解为“设定”、“主线”与“高潮”，聚焦于总辖克里斯滕冲破天穹的瞬间。我们探讨了关于宇宙、理想主义与远视的浪漫，以及文明存续的代价。
+                            </p>
+                            <div class="text-xs text-gray-400 border-t border-gray-100 pt-3 flex items-center gap-2">
+                                <span>🗣 汇报形式: 学术报告</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. 唐人街之味 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.10.25</span><br>第九期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-red-50 text-red-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Sociology</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">唐人街之味</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                以图书《唐人街之味》为出发点，探讨三代华人移民的身份认同变迁。从食物口味的“在地化”与“正宗性”之争中，窥见族群在异乡的生存策略与文化记忆。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. 刘慈欣 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.09.18</span><br>第八期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-indigo-50 text-indigo-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Physics & Phil.</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">《朝闻道》中的物理学理论基础</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                刘慈欣的硬核浪漫。当“真理”的代价是“生命”，人类如何抉择？本期从大统一理论、真空衰变等物理学地基出发，探讨科学探索的终极伦理。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. 游戏与AI -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.09.05</span><br>第七期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-green-50 text-green-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Tech & Design</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">网页交互游戏与AI在游戏中的应用</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                聚焦于Ludology（游戏学）与技术的交汇点。生成式AI如何重塑游戏开发的管线？交互式网页叙事如何打破线性的藩篱？
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. 大屠杀目光 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.08.29</span><br>第五期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-stone-100 text-stone-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Film Ethics</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">大屠杀的目光伦理</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                西方电影的大屠杀话语及其困境。探讨了历史创伤的视觉再现与伦理问题：作为观众的“凝视”是否也是一种暴力？以及复杂受害者的伦理语境。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. 内景唐人街 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.08.15</span><br>第四期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-yellow-50 text-yellow-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Lit. & Identity</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">《内景唐人街》</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                以游朝凯的小说出发，讨论全球化背景下华人社区的文化认同与空间实践。当生活被固化为剧本，我们如何打破“背景板”角色的宿命？
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 文化与视角 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.08.06</span><br>第三期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Psychology</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Culture and point of view</h3>
+                            <p class="text-gray-600 mb-4 text-justify">
+                                <strong>R.E. Nisbett & T. Masuda.</strong> 探讨东西方文化视角差异及其对认知过程的影响。
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded text-sm text-gray-600 grid grid-cols-2 gap-4">
+                                <div>
+                                    <span class="font-bold text-gray-800 block mb-1">西方 (古希腊)</span>
+                                    离散的、原子论的<br>关注个体与属性<br>追求逻辑与排中律
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-800 block mb-1">东亚 (农耕)</span>
+                                    连续的、场域的<br>关注背景与关系<br>接受矛盾与中庸
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Hito Steyerl -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-gray-300 rounded-full border-4 border-[#f4f1ea] group-hover:bg-green-700 transition z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.06.24</span><br>第二期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition duration-300">
+                            <span class="px-2 py-1 bg-pink-50 text-pink-800 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Art Theory</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">自由落体：Hito Steyerl</h3>
+                            <p class="text-gray-600 mb-4 text-justify">
+                                分析了当代艺术家Hito Steyerl的作品。从大航海时代的“线性透视”到现代社会的“垂直视角”与上帝视角。
+                            </p>
+                            <ul class="list-disc list-inside text-sm text-gray-500 space-y-1">
+                                <li>现代的矛盾：既坚不可摧又短暂的当下</li>
+                                <li>位置感的迷失与“假设的海平面”</li>
+                                <li>自由落体隐喻：人与物界限的模糊</li>
+                                <li>对“历史完美静止”与福山“历史终结论”的批判</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. 草坪讨论 -->
+                <div class="relative group">
+                    <div class="absolute -left-[9px] top-6 w-5 h-5 bg-green-200 rounded-full border-4 border-[#f4f1ea] z-10"></div>
+                    <div class="ml-8 md:grid md:grid-cols-12 md:gap-10 items-start">
+                        <div class="col-span-3 text-gray-500 sans-font text-sm md:text-right pt-7">
+                            <span class="font-bold text-gray-800">2025.06.13</span><br>第一期
+                        </div>
+                        <div class="col-span-9 bg-white p-8 rounded-lg shadow-sm border border-gray-100 opacity-80 hover:opacity-100 transition">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded sans-font mb-4 inline-block">Genesis</span>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">草坪讨论</h3>
+                            <p class="text-gray-600 mb-0 text-justify">
+                                一切的开始。在诺丁汉的草坪上，我们没有PPT，只有思想的碰撞。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400 text-sm italic">... To be continued.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们 -->
+    <section id="join" class="py-24 bg-green-900 text-white text-center px-4 relative overflow-hidden">
+        <!-- 装饰背景 -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 relative z-10">Join the Conversation</h2>
+        <p class="text-lg opacity-80 mb-12 max-w-2xl mx-auto font-light relative z-10">
+            无论你是理工科还是文科背景，只要你对这种跨学科的“自由落体”感兴趣，<br>诺丁汉文理学院都欢迎你的加入。
+        </p>
+        <div class="inline-block bg-white text-green-900 p-8 rounded-lg shadow-2xl relative z-10">
+            <div class="w-40 h-40 bg-gray-200 mx-auto mb-4 flex items-center justify-center text-gray-400 text-xs text-center border border-gray-300">
+                [微信二维码占位]<br>QR Code
+            </div>
+            <p class="font-bold mb-1">扫码加入社群</p>
+            <p class="text-xs text-gray-500">备注：文理学院</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-[#1a2e22] text-gray-500 py-10 text-center text-xs border-t border-gray-800">
+        <p>&copy; 2025 Nottingham Liberal Arts. All rights reserved.</p>
+        <p class="mt-2 opacity-60">Design inspired by the misty mornings of Nottingham.</p>
+    </footer>
+
+</body>
+</html>
